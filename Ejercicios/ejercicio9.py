@@ -9,8 +9,12 @@ def hallar_inversion(): # Funcion para agregar los datos a llenar
 
 # Multiplica los datos dados por el usuario
     interes_total  = interes_anual * numeros_años
-    capital_invertido = cantidad_invertir * interes_total
+    canidad_total = interes_total * cantidad_invertir
 
     print('capital_incvertido')
 
 hallar_inversion()
+
+
+
+

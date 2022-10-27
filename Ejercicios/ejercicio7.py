@@ -6,7 +6,7 @@ calcule el índice de masa corporal y lo almacene en una variable, y muestre
 
 # Pregunta al usuario
 peso = input("¿Cuál es tu peso en kg? ") 
-estatura = input("¿Cuál es tu estatura en metros?")
+estatura = input("¿Cuál es tu estatura en metros? ")
 
 # Obtiene datos y los hace una ecuacion 
 imc = round(float(peso)/float(estatura)**2,2)
