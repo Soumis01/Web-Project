@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(219, 240, 199);
+    color: #000000;
+}
+
+#titulo { /*Llama al id en el index*/
+    color: blue;
+    padding: 8px;
+    border: #fac000;
+    height: 100px;
+    width: 100px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rebeccapurple;
+}
+
+.etiqueta{ /*Llama a class en el index*/
+    color: blueviolet;
+}
+
+/* Margin establece el margen para los cuatro lados, haciendo una caja haciendo una separacion de body*/
+.caja{
+    margin: 8px;
+    padding: 8px;
+    border-style: solid; /*Borde de la caja*/
+    border-width: 8px; /*Tamaño del borde*/
+    border-color: blue; /*Color del borde*/
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+    background-color: #fac000;
+    
+}
