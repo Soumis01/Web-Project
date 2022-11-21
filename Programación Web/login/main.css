@@ -12,18 +12,18 @@ body{
     /* vh (viewport-height) = Altura de la ventana gráfica. 
     vw (viewport-width) = Anchura de la ventana gráfica. */
     font-family: sans-serif;
-    background: linear-gradient(27deg, rgb(55, 27, 213) 50%, rgb(27, 50, 92) 50%);
+    background-color: rgb(210, 213, 224);
 }
 
 /* Llamamos la clase se form */
 .form-body{
     width: 400px;
     min-width: 300px;
-    border-radius: 10px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: solid 1px #fff;
-    margin: 10px;
+    border-radius: 15px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 70px;
+    border: solid 1px rgb(0, 0, 0);
+    margin: 5px;
     
 }
 
@@ -37,7 +37,7 @@ body{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: 25px;
 }
 
@@ -47,8 +47,8 @@ body{
     height: 40px;
     width: 75%;
     padding-left: 10px;
-    color: rgb(255, 255, 255);
-    border: 1px solid #fff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: transparent;
@@ -62,14 +62,19 @@ body{
     margin-top: 20px;
 }
 
+.form-body input[type="email"]{
+    margin-top: 20px;
+}
+
+
 ::placeholder{
     font-size: 1rem;
-    color: rgb(255, 255, 255, .596);    
+    color: rgba(0, 0, 0, 0.596);    
 }
 
 .form-body input:hover{
     transition: .5s;
-    border: 1px solid #2980b9;
+    border: 1px solid #000000;
     color: 2498bd;    
 }
 
@@ -81,7 +86,7 @@ body{
     height: 40px;
     width: 78%;
     background: transparent;
-    color: #b9c4c6;
+    color: #000000;
     border-radius: 2px;
     cursor: pointer;
     outline: none;
@@ -89,7 +94,11 @@ body{
 }
 
 .form-body button:hover{
-    color: #d5dbdd;
-    border: 2px solid #3498db;
-    background: linear-gradient(#34495e, #2c3e50);
+    color: #000000;
+    border: 1px solid #ffffff;
+}
+
+#register{
+    text-align: center;
+    
 }
