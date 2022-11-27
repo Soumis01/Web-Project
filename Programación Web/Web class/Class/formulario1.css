@@ -1,0 +1,8 @@
+.form{
+     width: 100%; /* Anchura */
+    max-width: 600px; /* Ancho maximo */
+    margin: 0 auto; /* Margen */
+    justify-content: center; /* Centra como Word*/
+    display: flex; /* Caja flexible */
+}
+
