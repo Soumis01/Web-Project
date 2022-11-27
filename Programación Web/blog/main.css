@@ -52,12 +52,14 @@ footer section{
 
 footer p{
     margin: 0;
+    padding: 0rem;
 }
 
 footer a{
     transition: color 0.3s ease;
     color: white;
     text-decoration: none;
+    padding-left: 2rem;
 }
 
 footer a:hover{
