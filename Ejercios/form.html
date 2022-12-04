@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+<!-- action: redirecciona -->
+<!-- method: la forma de envio al servidor, get en la misla ulr(lo puede ver el usario) -->
+    <form action=".html" method="get">
+
+    <!-- for: hacer la misma referencia el id del input junto a label -->
+    <!-- name: define el nombre del formulario para el servidor-->
+        <div>
+            <label for="nombreusuario">Nombre del usuario</label>
+            <input type="text" name="nombreusuario" id="nombreusuario">
+        </div> <br>
+
+        <div>
+            <label for="edad">Pon tú edad</label>
+            <input type="number" name="edad" id="edad" min="0" max="10">
+        </div> <br>
+
+        <div>
+            <label for="fecha-nacido">Cuando naciste</label>
+            <input type="date" id="fecha-nacido" name="fecha-nacido">
+        </div> <br>
+
+        <div>
+            <label for="comantarios">Comentarios</label>
+            <textarea name="comantarios" id="comantarios" cols="10" rows="1"></textarea>
+        </div> <br>
+
+    <!-- Seleccion con diferentes valores -->
+        <label for="mumeros">Seleciona</label>
+        <sectio id="numeros" name="mumeros">
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+        </section> <br>
+
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="text" name="password" id="password" required> <!-- required: obligartorio el llenado-->
+        </div> <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
