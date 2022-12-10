@@ -4,18 +4,17 @@ body {
     padding: 0%;
 }
 
+/* Barra principal  */
 nav {
     background-color: black;
     color: white;
     width: 100%;
 }
 
-nav .mobile {
-    display: none;
-}
-
-nav .logo {
-    min-width: 250px;
+nav .barra {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
 }
 
 nav a{
@@ -30,44 +29,44 @@ nav a:hover {
     background-color: aqua;
 }
 
-
-nav .desktop {
+nav .primary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20%;
+    padding: 0;
 }
 
-nav .desktop .primary,
-nav .desktop .secondary {
+/* Texto central */
+div .text{
+    text-align: center;
+    margin: 0%;
+    padding-top: 2%;
+
+}
+
+div .parrafo{
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    padding-top: 1%;
+}
+
+/* Tarjetas */
+.container {
+    padding: 20px;
     display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
 }
 
-nav .desktop .secondary.mini {
-    display: none;
+.box {
+    /* border: 2px solid rgb(43, 43, 43);
+    background-color: white; */
+    color: black;
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: #efefef;
+    border-radius: 2rem;
 }
-
-@media screen (max-width: 856) {
-
-    nav .logo {
-        min-width: 100px;
-    }
-
-    nav .secondary.full {
-        display: none;
-    }
-
-    nav .secondary.mini {
-        display: block !important;
-    }
-
-    nav .secondary.mini .submenu {
-        position: absolute;
-        display: none;
-
-    nav .secondary.mini .more ~ .submenu {
-        display: block;
-    }
-    }
-}
-
