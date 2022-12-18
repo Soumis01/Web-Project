@@ -38,14 +38,46 @@
     <a href="https://google.com">Ir al link externo</a>   <br>
     <a href="form.html">Ir al link interno</a>
 
-<!-- Listas -->
-    <ol>
-        <li>Lista ordenada</li>
-    </ol>
+        <!-- El atributo target especifica dónde abrir el documento vinculado. Puede tener uno de los siguientes valores:
 
-    <ul>
-        <li>Lista desordenada</li>
-    </ul>
+        _blank - Abre el documento en una nueva ventana o pestaña
+        _self: abre el documento vinculado en la misma ventana / pestaña en la que se hizo clic (este es el que usa por defecto)
+        _parent - Abre el documento vinculado en el marco primario
+        _top: abre el documento en la ventana completa
+        nombre del marco: abre el documento vinculado en un marco con nombre -->
+
+<!-- Listas -->
+<ul style="list-style-type:disc;">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+        <!-- Estilos desordenados:
+        disc: es un círculo relleno
+        circle: es una circunferencia
+        square: es un cuadrado
+        none: no sale marcador-->
+
+<ol type="1">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+        <!--Estilos ordenados:
+        type=”1”: Con números (es la opción por defecto)
+        type=”A”: Con letras mayúsculas
+        type=”a”: Con letras minúsculas
+        type=”I”: Con números romanos en mayúsculas
+        type=”i”: Con números romanos en minúsculas-->
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de marcado</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje de estilos</dd>
+</dl>
+        <!-- La etiqueta <dl> define la lista de descripción, la etiqueta 
+        <dt> define el término (nombre) y la etiqueta <dd> describe cada término -->
 
 <!-- Multimedia en la pagina -->
     <img src="" alt="">
@@ -54,25 +86,77 @@
     <audio src="" controls></audio>
 
 <!-- Tablas --> <br><br><br>
-<table border="1"> <!-- Tabla -->
+<table border="1"> 
     <caption><h1>Horario</h1></caption>
-    <tr> <!-- Fila de tabla -->
-        <th>Lunes</th> <!-- Celdas de fila -->
+    <tr> 
+        <th>Lunes</th> 
         <th>Martes</th>
         <th>Miercoles</th>
         <th>Jueves</th>
         <th>Viernes</th>
     </tr>
-    <!-- Elementos de fila -->
         <td>Ingles</td>
         <td>Medios de Comunicación</td>
         <td>Matemáticas</td>
         <td>Diseño web</td>
         <td>Lengua Española</td>
     </table> <br>
+        <!-- Usamos <table> para definir una tabla
+        Usamos <tr> para definir una fila en una tabla
+        Usamos <td> para definir una celda de la tabla
+        Usamos <th> para los encabezados de la tabla
+        Usamos <caption> para ponerle un título -->
+
 
 <!-- Linea -->
 <hr> <br>
+
+<!-- Entradas de usuario -->
+<input type="text"> <!-- Texto -->
+<input type="password"> <!-- Contraseña -->
+<input type="email"> <!-- correo -->
+<input type="search"> <!-- Busqueda -->
+<input type="tel"> <!-- Telefono -->
+<input type="url"> <!-- Links -->
+<input type="nmber"> <!-- Numeros -->
+<input type="range"> <!-- Proporciona un slider para seleccionar un valor numérico entre dos valores (por defecto de 0 a 100) -->
+<input type="radio" name="gender" value="female"> Mujer<br> <!-- crea un botón de opción que permite al usuario seleccionar una opción de un grupo de opciones. -->
+<input type="checkbox"> <!-- crea una casilla de verificación que permite al usuario seleccionar varias opciones de un grupo de opciones. -->
+<input type="submit"> <!-- crea un botón que envía el formulario a un servidor web para procesar la información. -->
+<input type="reset"> <!-- crea un botón que restablece todos los campos del formulario a sus valores predeterminados. -->
+<input type="color"> <!-- Nos permite selecionar un color -->
+<input type="datetime-local"> <!-- Determinar fecha y hora-->
+<input type="date"> <!-- Fecha -->
+<input type="week"> <!-- Semana -->
+
+        <!-- Atributos de los inputs:
+        checked: Especifica si un input de tipo checkbox o radio tiene que estar seleccionado por defecto
+        disabled: Especifica si un input debería estar deshabilitado
+        max: Especifica el máximo del valor de un input
+        maxlength: Especifica el número máximo de caracteres
+        min: Especifica el valor mínimo del input
+        pattern: Especifica una expresión regular para chequear el valor del input
+        readonly: Especifica si el input no se puede cambiar
+        required: Especifica si el input es obligatorio de rellenar
+        size: Especifica el ancho (en caracteres) para el input
+        step: Especifica el intervalo para pasar de un valor numérico a otro
+        value: Especifica el valor por defecto del input -->
+
+<!-- Formularios -->
+<form action="/form-handler.php"> <!-- define la acción a realizar cuando se envía el formulario. -->
+    <fieldset> <!-- agrupa el formulario -->
+    <legend>Información personal:</legend> <!-- Define titulo -->
+    Nombre:<br>
+    <input type="text" name="firstname"><br>
+    Apellido:<br>
+    <input type="text" name="lastname"><br><br>
+    <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+<!-- El atributo method especifica el método HTTP (GET o POST) que se va a usar cuando se envíen los datos.
+GET:Este es el método por defecto. Cuando se usa este método los datos serán visibles en la URL de la página de envío.
+POST:Siempre que haya datos confidenciales hay que usar POST. Este método no muestra la información en la URL y no tiene limitación de tamaño.-->
+
 
 <!-- Pie de pagina -->
     <footer>Pie</footer>
